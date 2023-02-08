@@ -3,7 +3,7 @@ import Card from "./components/card";
 
 const App = () => {
   const [products, setProducts] = useState([]);
-  const [name, setName] = useState([]);
+  // const [name, setName] = useState([]);
   
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const App = () => {
       const response = await fetch("https://my-json-server.typicode.com/kodplex/pr-re-ec-products/db");
       const data = await response.json();
       setProducts(data.products);
-      setName(data.products.product.name)
+      // setName(data.products.product.name)
     };
     fetchData();
   }, []);
