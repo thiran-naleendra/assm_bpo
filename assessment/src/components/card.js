@@ -29,15 +29,8 @@ function Card() {
         {
             tittle: 'Card-6',
             text: `Card Details`
-        },
-        {
-            tittle: 'Card-7',
-            text: `Card Details`
-        },
-        {
-            tittle: 'Card-8',
-            text: `Card Details`
         }
+        
 
     ])
 
