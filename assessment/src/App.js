@@ -11,6 +11,7 @@ const App = () => {
       const response = await fetch("https://my-json-server.typicode.com/kodplex/pr-re-ec-products/db");
       const data = await response.json();
       setProducts(data.products);
+      console.log(data.products)
       // setName(data.products.product.name)
     };
     fetchData();
