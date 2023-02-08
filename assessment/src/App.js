@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const App = () => {
   const [products, setProducts] = useState([]);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,7 +19,8 @@ const App = () => {
       <ul>
         {products.map(product => (
           <li key={product.id}>
-            {product.name} ({product.price} {product.currency})
+            {product.name} 
+
           </li>
         ))}
       </ul>
